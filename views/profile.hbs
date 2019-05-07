@@ -5,9 +5,27 @@
     }
 </style>
 
-{{!-- <a href="/users">Users</a> | <a href="/logout">Logout</a> --}}
-<h2>{{title}}</h2>
-<p><b>User Id:</b> {{loginUser.sub}}</p>
-<p><b>Name:</b> {{loginUser.name}}</p>
-<p><b>Username:</b> {{loginUser.preferred_username}}</p>
-<p><b>Email:</b> {{loginUser.email}}</p>
+<div class="card">
+   <div class="card-body">
+  <h2>{{title}}</h2>
+</div>
+</div>
+<br>
+<br>
+
+<div style="display: inline-block;" class="card">
+  <h1 style="text-align: center;
+  padding: 40px;
+  background-color: black;
+  color: white;
+  font-size: 27px;
+  font-weight: bold;
+  margin: 0;">User ID: {{loginUser.sub}}<p><b>Full Name:</b> {{loginUser.name}}</p></h1>
+  <div style="background-color: #f7f7f7;">
+    <h3 style="text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;">
+  <p><b>Username:</b> {{loginUser.preferred_username}}</p>
+  <p><b>Email:</b> {{loginUser.email}}</p></h3>
+  </div>

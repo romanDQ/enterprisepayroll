@@ -1,10 +1,10 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Open Sans", sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color: black;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
@@ -20,17 +20,17 @@ table {
 }
 
 td, th {
-  border: 1px solid #dddddd;
+  border: 1px solid black;
   text-align: left;
   padding: 8px;
 }
 
 tr:nth-child(even) {
-  background-color: #99c0ff;
+  background-color: #E1DFDE;
 }
 
 h1 {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 20;
   font-variant-position: sub;
   /* background: #bdbdbd; */
@@ -39,11 +39,11 @@ h1 {
 
 header {
   padding: 20px;
-  background: #160201;
+  background: black;
 }
 
 li {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 	font-size: 30;
 }
 
@@ -72,7 +72,7 @@ nav a {
 
 h2
 {
-  border-left: solid 10px #427fbf;
+  border-left: solid 10px black;
   padding-left: 20px;
   font-weight: bold;
   font-size: 40px;

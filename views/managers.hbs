@@ -1,5 +1,5 @@
 <style>
-    input:focus 
+    input:focus
 {
     outline:none;
 }
@@ -25,7 +25,7 @@ button{
 }
 
 
-button:hover 
+button:hover
 {
     background-color: #912525;
 }
@@ -35,50 +35,32 @@ button:hover
 
 <div class="container">
     <div class="row">
-        <h2>Managers</h2>
+
         <form action="/managers" method="post">
-            {{!-- <div class="form-group">
-                First Name: <input type="text" name="s_firstname" value="{{s_firstname}}"><br>
-                Last Name: <input type="text" name="s_lastname" value="{{s_lastname}}"><br>
-                <input type="submit" value="search"> --}}
-                {{!-- <div style="display: flex;">
-                    <input style="" type="text" name="s_firstname" placeholder="Search by First Name..." value="{{s_firstname}}" /><br />
-                </div>
+
                 <div style="display: flex;">
-                    <input type="text" name="s_lastname" placeholder="Search by Last Name..." value="{{s_lastname}}" /><br />
-                    <button class="search" type="submit">
-                        <i class="fa fa-search"></i></button>
-                </div> --}}
-                <div style="display: flex;">
-                    <input style="" type="text" name="s_searchName" placeholder="Search by Name..." value="{{s_searchName}}" /><br />
+                  <h2>Search Managers</h2>
+                    <input style="" type="text" name="s_searchName" placeholder="Enter name to be searched... (ex. Parto Bamford)" value="{{s_searchName}}" /><br />
                     <button class="search" type="submit">
                         <i class="fa fa-search"></i></button>
                 </div>
-                {{!--
-            </div> --}}
+
         </form>
-        (For instance: Margareta Markovitch)
     </div>
 </div>
 
 <div class="row">
     <div class="col-md-1"></div>
-    <div class="col-md-12">
-        <table class="table table-hover">
+    <div class="col-md-12" style="overflow-y:auto;">
+      <br>
+        <table>
             <thead>
                 <tr>
-                    <th scope="col">Employee number</th>
+                    <th scope="col">Employee ID</th>
                     <th scope="col">First Name</th>
                     <th scope="col">Last Name</th>
                     <th scope="col">Birthday</th>
                     <th scope="col">Hire Date</th>
-                    {{!--
-                    emp_no INT NOT NULL,
-                    birth_date DATE NOT NULL,
-                    first_name VARCHAR(14) NOT NULL,
-                    last_name VARCHAR(16) NOT NULL,
-                    gender ENUM ('M','F') NOT NULL,
-                    hire_date DATE NOT NULL, --}}
                 </tr>
             </thead>
             <tbody>

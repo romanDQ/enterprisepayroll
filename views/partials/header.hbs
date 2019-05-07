@@ -18,7 +18,7 @@
     }
 </style>
 
-<nav style="background-color: #427fbf;" class="navbar navbar-default">
+<nav style="background-color: black;" class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
             <a href="/">
@@ -38,11 +38,11 @@
             {{!-- if the user logs in, show them all the tabs, else don't show anything --}}
             {{#if user.authenticated}}
             <ul class="nav navbar-nav">
-                <li><a style="color:white;" href="/dashboard">Dashboard</a></li>
+                <li><a style="color:white;" href="/dashboard">Homepage</a></li>
                 <li><a style="color:white;" href="/departments">Departments</a></li>
-                <li><a style="color:white;" href="/employees">Employees</a></li>
-                <li><a style="color:white;" href="/managers">Managers</a></li>
-                <li><a style="color:white;" href="/employee">Add</a></li>
+                <li><a style="color:white;" href="/employees">Search Employees</a></li>
+                <li><a style="color:white;" href="/managers">Search Managers</a></li>
+                <li><a style="color:white;" href="/employee">Add Employees</a></li>
             </ul>
             {{/if}}
             <ul class="nav navbar-nav navbar-right">

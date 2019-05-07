@@ -9,14 +9,14 @@
 
 <style>
   .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 black;
     transition: 0.3s;
     width: 33%;
     border-radius: 5px;
   }
 
   .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 black;
   }
 
   img {
@@ -28,18 +28,20 @@
   }
 </style>
 
+
 <div style="text-align: center;">
+  <br>
+  <h3 style="font-size: 32px;
+font-weight: bold;">Number of Employees In Each Department</h3>
+<br>
+
   {{#each departments}}
-  {{!-- <tr>
-    <th scope="row">{{this.dept_no}}</th>
-    <td>{{this.dept_name}}</td>
-  </tr> --}}
   <div style="display: inline-block;" class="card">
     <h1 style="text-align: center;
     padding: 40px;
-    background-color: #427fbf;
+    background-color: black;
     color: white;
-    font-size: 30px;
+    font-size: 27px;
     font-weight: bold;
     margin: 0;">{{this.dept_name}}</h1>
     <div style="background-color: #f7f7f7;">
@@ -47,35 +49,13 @@
     font-size: 36px;
     font-weight: bold;
     margin: 0;">{{this.employees_count}}</h3>
-      <span style="color: #919191">Employees</span>
     </div>
+
   </div>
+  <br>
+  <br>
+  <br>
+
+
 
   {{/each}}
-
-
-
-
-
-
-  {{!-- <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
-      <table class="table table-hover">
-        <thead>
-          <tr>
-            <th scope="col">Department Number</th>
-            <th scope="col">Department name</th>
-          </tr>
-        </thead>
-        <tbody>
-          {{#each departments}}
-          <tr>
-            <th scope="row">{{this.dept_no}}</th>
-            <td>{{this.dept_name}}</td>
-          </tr>
-          {{/each}}
-        </tbody>
-      </table>
-    </div>
-  </div> --}}
