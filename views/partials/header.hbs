@@ -18,40 +18,40 @@
     }
 </style>
 
-<nav style="background-color: black;" class="navbar navbar-default">
+<nav class="navbar navbar-dark bg-dark">
 
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             {{!-- if the user logs in, show them all the tabs, else don't show anything --}}
             {{#if user.authenticated}}
             <ul class="nav navbar-nav">
-                <li><a style="color:white;" href="/">Home</a></li>
-                <li><a style="color:white;" href="/dashboard">Statistics</a></li>
-                <li><a style="color:white;" href="/departments">Departments</a></li>
-                <li><a style="color:white;" href="/employees">Search Employees</a></li>
-                <li><a style="color:white;" href="/managers">Search Managers</a></li>
-                <li><a style="color:white;" href="/employee">Add Employees</a></li>
+                <li><a style="color:black;" href="/">Home</a></li>
+                <li><a style="color:black;" href="/dashboard">Statistics</a></li>
+                <li><a style="color:black;" href="/departments">Departments</a></li>
+                <li><a style="color:black;" href="/employees">Search Employees</a></li>
+                <li><a style="color:black;" href="/managers">Search Managers</a></li>
+                <li><a style="color:black;" href="/employee">Add Employees</a></li>
             </ul>
             {{/if}}
             <ul class="nav navbar-nav navbar-right">
                 {{!-- if the user logs in, the user has options: profile, onelogin, and logout --}}
                 {{#if user.authenticated}}
                 <li class="dropdown">
-                    <a style="color:white;" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    <a style="color:black;" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                         aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i>
                         {{!-- show user's name once they login --}}
                         {{user.loginUser.displayName}} <span class="caret"></span></a>
-                    <ul style="background-color: black;" class="dropdown-menu">
-                        <li><a style="color:white;" href="/users/profile">Profile </a></li>
-                        <li style="color:white;" role="separator" class="divider"></li>
-                        <li><a style="color:white;" href="https://enterprise172-dev.onelogin.com" target="_blank">OneLogin </a></li>
-                        <li style="color:white;" role="separator" class="divider"></li>
-                        <li><a style="color:white;" href="/logout">Logout</a></li>
+                    <ul style="background-color: white;" class="dropdown-menu">
+                        <li><a style="color:black;" href="/users/profile">Profile </a></li>
+                        <li style="color:black;" role="separator" class="divider"></li>
+                        <li><a style="color:black;" href="https://enterprise172-dev.onelogin.com" target="_blank">OneLogin </a></li>
+                        <li style="color:black;" role="separator" class="divider"></li>
+                        <li><a style="color:black;" href="/logout">Logout</a></li>
                     </ul>
                 </li>
                 {{!-- if the user does not login, the only option the user will have is to login --}}
                 {{else}}
-                <li><a style="color:white;" href="/login">Login</a></li>
+                <li><a style="color:black;" href="/login">Login</a></li>
                 {{/if}}
             </ul>
         </div><!-- /.navbar-collapse -->
